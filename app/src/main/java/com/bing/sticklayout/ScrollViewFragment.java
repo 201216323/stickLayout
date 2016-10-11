@@ -2,6 +2,7 @@ package com.bing.sticklayout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,7 @@ import android.view.ViewGroup;
 /**
  * Created by yhqz on 2016/6/1.
  */
-public class ScrollViewFragment extends BaseFragment{
+public class ScrollViewFragment extends Fragment{
     public static ScrollViewFragment newInstance() {
         Bundle args = new Bundle();
         ScrollViewFragment fragment = new ScrollViewFragment();
@@ -23,8 +24,8 @@ public class ScrollViewFragment extends BaseFragment{
         return inflater.inflate(R.layout.fragment_scroll_view, container, false);
     }
 
-    @Override
-    public String getTitle() {
-        return " ScrollView";
-    }
+//    @Override
+//    public String getTitle() {
+//        return " ScrollView";
+//    }
 }

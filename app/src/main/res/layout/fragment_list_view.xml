@@ -1,10 +1,18 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+    >
+
     <ListView
         android:id="@+id/id_stickynavlayout_innerscrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:listSelector="@android:color/transparent" />
 
-</FrameLayout>
+        android:listSelector="@android:color/transparent"
+
+        />
+
+
+</LinearLayout>

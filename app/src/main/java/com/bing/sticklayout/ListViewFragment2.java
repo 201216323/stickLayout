@@ -17,13 +17,13 @@ import java.util.List;
 /**
  * Created by yhqz on 2016/6/1.
  */
-public class ListViewFragment extends Fragment {
+public class ListViewFragment2 extends Fragment {
 
     ListView mListView;
 
-    public static ListViewFragment newInstance() {
+    public static ListViewFragment2 newInstance() {
         Bundle args = new Bundle();
-        ListViewFragment fragment = new ListViewFragment();
+        ListViewFragment2 fragment = new ListViewFragment2();
         fragment.setArguments(args);
         return fragment;
     }
@@ -32,22 +32,19 @@ public class ListViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list_view, container, false);
-        mListView = (ListView) view.findViewById(R.id.id_stickynavlayout_innerscrollview);
-
+        mListView = (ListView)view.findViewById(R.id.id_stickynavlayout_innerscrollview);
         return view;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        View footView = LayoutInflater.from(getContext()).inflate(R.layout.fragment_list_view_foot, null);
-        mListView.addFooterView(footView);
+
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             list.add("ListView----item--->>>>" + i);
         }
         ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, list);
-
         mListView.setAdapter(adapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -55,9 +52,8 @@ public class ListViewFragment extends Fragment {
                 Toast.makeText(getActivity(), "click " + position, Toast.LENGTH_LONG).show();
             }
         });
-
-
     }
+
 
 
 //    @Override

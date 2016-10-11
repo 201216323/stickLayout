@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">stickLayout</string>
-    <string name="header">slkgsaghklsahgkshkghsl hgsklhg slhgjkshgklshgkslahg jskhgksjhgklshgkshg jg j ljg asjgljgolasgkdfhsklgn </string>
+    <string name="header">这是一段文字，这是一段文字，这是一段文字，这是一段文字，这是一段文字，这是一段文字，</string>
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

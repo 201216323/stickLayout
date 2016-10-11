@@ -6,26 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.bing.sticklayout.MainActivity">
-    <com.bing.sticklayout.StickyNavLayout
-        android:id="@+id/stickNL"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        stick:isStickNav="false"
-        >
 
-        <include layout="@layout/layout_project_detail_header" />
+   <FrameLayout
+       android:id="@+id/frameLayout"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
 
-        <include layout="@layout/layout_sticky_indicator_tab" />
+   </FrameLayout>
 
-        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/id_stickynavlayout_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="底部"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/white"
+    android:padding="10dp"
 
-    </com.bing.sticklayout.StickyNavLayout>
-
-
+    />
 
 
 </LinearLayout>

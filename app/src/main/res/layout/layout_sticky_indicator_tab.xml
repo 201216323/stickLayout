@@ -12,9 +12,9 @@
         android:layout_height="43dp"
         android:background="@color/white"
         app:tabBackground="@color/white"
-        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorAccent"
         app:tabIndicatorHeight="1.5dp"
-        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorAccent"
         app:tabTextColor="@color/main_text_color_dark6" />
 
     <View
